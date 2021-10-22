@@ -2,7 +2,7 @@
  * A class that maintains information on a book.
  * This might form part of a larger application such
  * as a library system, for instance.
- *
+ * 
  * @author Jakob H. Molnes
  * @version 2021/09/09
  */
