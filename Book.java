@@ -10,7 +10,7 @@ class Book {
     private final String author;
     private final String title;
     private final String publisher;
-    private final String releaseYear;
+    private final int releaseYear;
     private final int pages;
     private final String barcode;
     private boolean lent;
@@ -18,7 +18,7 @@ class Book {
     /**
      * Set the author and title fields when this object is constructed.
      */
-    public Book(String author, String title, String publisher, String releaseYear, int pages, boolean lent,
+    public Book(String author, String title, String publisher, int releaseYear, int pages, boolean lent,
                 String barcode) {
         this.author = author;
         this.title = title;
@@ -82,7 +82,7 @@ class Book {
     /**
      * Returns the release year of the book.
      */
-    public String getReleaseYear() {
+    public int getReleaseYear() {
         return this.releaseYear;
     }
 
