@@ -31,7 +31,7 @@ public class BookRegister {
         }
     }
     public boolean removeBook(String barcode) {
-        // Remove book from the register if barcode exists
+        // Remove book from the register if a barcode exists
         Book returned = this.books.remove(barcode);
 
         return returned != null;
