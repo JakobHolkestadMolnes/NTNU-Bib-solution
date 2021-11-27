@@ -21,7 +21,7 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Test the project before building
-        run: mvn clean test
+        run: mvn clean test --file BibSolution/pom.xml
 
   build:
 
@@ -36,4 +36,4 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file BibSolution/pom.xml
